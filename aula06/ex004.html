@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 4</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var idade = Number(window.prompt('Quantos anos você tem?'))
+        var sal = Number(window.prompt('Seu salário é:'))
+        document.write(`Seu nome é ${nome.toUpperCase()} e tem ${nome.length} letras, e sua idade é ${idade}.`)
+        document.write(`Eu recebo ${sal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`).toFixed(2).replace('.',',')
+        
+    </script>
+</body>
+</html>
