@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color: rgb(190, 190, 190);
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual país você nasceu?</h1>
+    <hr>
+    Nacinalidade: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Precionar" onclick="responder()">
+    <div id="res">
+
+    </div>
+    <script>
+        function responder() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var nac = String(txtp.value.toUpperCase())
+            if (nac == 'BRASIL') {
+                
+                res.innerHTML = `<p>O pais que você nasceu é <strong>${nac}</strong></p>`
+                
+            } else {
+                res.innerHTML = `<p>Você não é do <strong>Brasil</strong></p>`
+                res.innerHTML += `<p>O pais que você nasceu é <strong>${nac}</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
