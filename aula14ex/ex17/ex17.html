@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Tabuada</h1>
+        <hr>
     </header>
     <section>
         <div>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p><strong>Número:</strong> <input type="number" name="num" id="txtn"> <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
-        <div id="res">
-            <p>Preencha os dados acima para ver o resultado!</p>
+        <div>
+            <p><select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select></p>
         </div>
     </section>
     <footer>
-        <p>&copy; Curso em Vídeo</p>
+        <p>&copy; Estevam3D</p>
     </footer>
     <script src="script.js"></script>
 </body>
