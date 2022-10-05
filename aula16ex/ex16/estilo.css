@@ -18,11 +18,18 @@ section {
 }
 
 select#flista {
-    width: 150px;
+    width: 200px;
+    text-align: center;
+    color: rgb(0, 0, 153);
 }
 
 div#pri {
     color: rgb(85, 82, 82);
+    text-align: center;
+}
+
+div#res {
+    color: rgb(150, 1, 1);
     text-align: center;
 }
 
